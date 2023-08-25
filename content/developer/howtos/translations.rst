@@ -12,7 +12,7 @@ This section explains how to provide translation abilities to your module.
 Exporting translatable term
 ===========================
 
-A number of terms in your modules are "implicitly translatable" as a result,
+A number of terms in your modules are implicitly translatable. As a result,
 even if you haven't done any specific work towards translation you can export
 your module's translatable terms and may find content to work with.
 
@@ -156,14 +156,14 @@ Plural
 
 **Don't** pluralize terms the English-way::
 
-    msg = _("You have %(count)s invoice", count=invoice_count)
+    msg = _("You have %(count) invoice", count=invoice_count)
     if invoice_count > 1:
       msg += _("s")
 
 **Do** keep in mind every language has different plural forms::
 
     if invoice_count > 1:
-      msg = _("You have %(count)s invoices", count=invoice_count)
+      msg = _("You have %(count) invoices", count=invoice_count)
     else:
       msg = _("You have one invoice")
 
