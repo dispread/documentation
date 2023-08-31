@@ -2,6 +2,8 @@
 Process Batch Transfers
 =======================
 
+.. _inventory/misc/batch_picking:
+
 Batch picking allows a single picker to handle a batch of orders,
 reducing the number of times he must visit the same location. In Odoo,
 it means you can regroup several transfers into the same batch
